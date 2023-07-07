@@ -16,7 +16,6 @@ const AssetCard = (props: CardProps<any>) => {
         {name}
       </div>
     </div>
-    // <div>Hi</div>
   );
 };
 

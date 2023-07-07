@@ -13,8 +13,36 @@ const links: Link[] = [
     url: "/",
   },
   {
-    label: "About",
-    url: "/turtlehead-tacos",
+    label: "Features",
+    url: "/",
+  },
+  {
+    label: "Features",
+    url: "/",
+  },
+  {
+    label: "Content",
+    url: "/",
+  },
+  {
+    label: "Stories",
+    url: "/",
+  },
+  {
+    label: "Units",
+    url: "/",
+  },
+  {
+    label: "Newswire",
+    url: "/",
+  },
+  {
+    label: "MEDIA REQUESTS",
+    url: "/",
+  },
+  {
+    label: "HOMETOWN NEWS",
+    url: "/",
   },
 ];
 
@@ -35,8 +63,9 @@ const Header = () => {
             src="https://www.dvidshub.net/images/dvids_logo_main.png"
             className="w-1/6"
           ></img>
-          <div className="text-2xl font-semibold">Turtlehead Tacos</div>
-          <div className="flex gap-x-10 text-lg font-semibold">{linkDoms}</div>
+          <div className="uppercase flex gap-x-8 text-xs font-light">
+            {linkDoms}
+          </div>
         </nav>
         <SearchBar></SearchBar>
       </div>
