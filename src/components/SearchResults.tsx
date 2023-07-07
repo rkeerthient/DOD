@@ -18,6 +18,8 @@ const SearchResults = () => {
   const loading = useSearchState((state) => state.searchStatus.isLoading);
   const [divs, setDivs] = useState<JSX.Element[]>([]);
   const query = useSearchState((state) => state.query.input);
+  const filters = useSearchState((state) => state.filters.facets);
+
   const loadMore = () => {
     query && searchActions.setQuery(query);
     searchActions.setOffset(offSet + 20);
@@ -45,7 +47,6 @@ const SearchResults = () => {
   const handleSearch: onSearchFunc = (searchEventData) => {
     setDivs([]);
     const { query } = searchEventData;
-    console.log(query);
     query && searchActions.setQuery(query);
     searchActions
       .executeVerticalQuery()

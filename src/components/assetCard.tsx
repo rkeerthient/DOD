@@ -6,7 +6,6 @@ const AssetCard = (props: CardProps<any>) => {
   const { result } = props;
   const { name } = result;
   const { c_image, landingPageUrl, c_assetType } = result.rawData;
-  console.log(JSON.stringify(c_assetType));
 
   return (
     <a href={landingPageUrl}>
