@@ -2,12 +2,10 @@
  * This is an example of how to create a static template that uses getStaticProps to retrieve data.
  */
 import * as React from "react";
-import { fetch } from "@yext/pages/util";
 import "../index.css";
 import {
   Template,
   GetPath,
-  TransformProps,
   TemplateConfig,
   TemplateProps,
   TemplateRenderProps,
@@ -15,8 +13,6 @@ import {
   HeadConfig,
 } from "@yext/pages";
 import PageLayout from "../components/page-layout";
-import Card from "../components/card";
-import { ExternalImage } from "../types/ExternalImage";
 import SearchResults from "../components/SearchResults";
 
 /**
