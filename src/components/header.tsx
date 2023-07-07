@@ -1,6 +1,7 @@
 import * as React from "react";
 import Cta from "../components/cta";
-import { SearchBar } from "@yext/search-ui-react";
+import { SearchBar, onSearchFunc } from "@yext/search-ui-react";
+import { useSearchActions } from "@yext/search-headless-react";
 
 type Link = {
   label: string;
@@ -67,7 +68,6 @@ const Header = () => {
             {linkDoms}
           </div>
         </nav>
-        <SearchBar></SearchBar>
       </div>
     </>
   );
